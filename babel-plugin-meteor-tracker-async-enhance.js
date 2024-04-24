@@ -129,7 +129,7 @@ module.exports = function ({types: t, template, caller}) {
         visitor: {
             Program: {
                 enter(_, state) {
-                    isServer = callerInfo?.arch.startsWith('os.')
+                    isServer = callerInfo?.arch?.startsWith('os.')
                 },
             },
             Function(path) {
